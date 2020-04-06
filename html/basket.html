@@ -94,7 +94,7 @@
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input checkitem" id="customCheck2">
                         <label class="custom-control-label" for="customCheck2"></label>
-                        <img src="../img/small-1.png" alt="">
+                        <img src="../img/805.gif" data-image="../img/small-1.png" alt="">
                         <p>Gamis Cewek</p>
                     </div>
                     <div class="box-image">
@@ -190,6 +190,11 @@
                     <img src="../img/New folder/mastercard.jpg" alt="">
                 </div>
             </div>
+            <div class="row" id="template">
+                <div class="col-sm-12">
+                    <p>&copy;2020 <a href="">treelogy.code</a></p>
+                </div>
+            </div>
         </div>
     </footer>
     
@@ -219,8 +224,20 @@
             }
         })
     </script>
-    <!-- number -->
-    
+    <!-- preload -->
+    <script>
+        function init() {
+            var imgDefer = document.getElementsByTagName('img');
+            for(var i = 0;i < imgDefer.length; i++) {
+                if(imgDefer[i].getAttribute('data-image')) {
+                    imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-image'));
+                }
+            }
+        }
+        window.onload = init
+    </script>
+
+
 
 </body>
 </html>

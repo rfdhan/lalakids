@@ -300,6 +300,20 @@ footer .col-sm-4 button{
 footer .col-sm-4 button:hover{
     background: #115ba5;
 }
+#template{
+    padding: 10px 0 0 0;
+    font-family: 'Roboto', sans-serif;
+}
+#template .col-sm-12 p{
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+}
+#template .col-sm-12 a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
 
 .badges{
     display: flex;

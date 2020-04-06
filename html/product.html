@@ -72,11 +72,11 @@
                 <div class="col-sm-6" id="small">
                     <div class="row">
                         <div class="col-sm-2 small-img">
-                            <img src="../img/small-1.png" onclick="myFunction(this)">
-                            <img src="../img/small-2.png" onclick="myFunction(this)">
-                            <img src="../img/small-3.png" onclick="myFunction(this)">
-                            <img src="../img/small-4.png" onclick="myFunction(this)">
-                            <img src="../img/small-5.png" onclick="myFunction(this)">
+                            <img src="../img/805.gif" data-image="../img/small-1.png" onclick="myFunction(this)">
+                            <img src="../img/805.gif" data-image="../img/small-2.png" onclick="myFunction(this)">
+                            <img src="../img/805.gif" data-image="../img/small-3.png" onclick="myFunction(this)">
+                            <img src="../img/805.gif" data-image="../img/small-4.png" onclick="myFunction(this)">
+                            <img src="../img/805.gif" data-image="../img/small-5.png" onclick="myFunction(this)">
                         </div>
                         <div class="col-sm-10 big-img">
                             <img id="imageBox" src="../img/small-1.png">
@@ -203,6 +203,11 @@
                     <img src="../img/New folder/mastercard.jpg" alt="">
                 </div>
             </div>
+            <div class="row" id="template">
+                <div class="col-sm-12">
+                    <p>&copy;2020 <a href="">treelogy.code</a></p>
+                </div>
+            </div>
         </div>
     </footer>
     
@@ -221,7 +226,18 @@
             fullImg.src = smallImg.src;
         }
     </script>
-
+    <!-- preload -->
+    <script>
+        function init() {
+            var imgDefer = document.getElementsByTagName('img');
+            for(var i = 0;i < imgDefer.length; i++) {
+                if(imgDefer[i].getAttribute('data-image')) {
+                    imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-image'));
+                }
+            }
+        }
+        window.onload = init
+    </script>
     
 
 
