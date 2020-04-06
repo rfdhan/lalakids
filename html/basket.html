@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+</head>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto&display=swap" rel="stylesheet"> 
+    <!-- google font -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="text/css" href="../css/datatables.min.css">
+    <link rel="stylesheet" href="text/css" href="../css/datatables.css">
+    <link rel="stylesheet" type="text/css" href="../css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="../css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../css/product.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+<body>
+    
+    <section id="head-nav">
+        <a href="#"><i class="fas fa-user"></i> Login</a>
+        <!-- <button type="button" class="btn btn-primary"><i class="fas fa-shopping-bag"></i><span class="badge badge-light">9</span>
+            <span class="sr-only">unread messages</span>
+        </button> -->
+    </section>
+
+    <a href="basket.html" class="badges"><i class="fas fa-shopping-bag"></i></a>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html" id="beranda">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="produk">Produk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="kontak">Kontak</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="bisnis">Peluang Bisnis</a>
+                        </li>
+                        <li class="right-menu">
+                            <button class="menu-button">Kategori <i class="fas fa-arrow-down"></i></button>
+                                <div class="dropdown-menu">
+                                    <div class="bg">
+                                        <a href="#">Gamis Anak</a>
+                                        <a href="#">Jilbab Anak</a>
+                                        <a href="#">Koko Anak</a>
+                                      </div>
+                                </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="resi">Cek Resi</a>
+                        </li>
+                    </ul>
+                    <div class="search-box">
+                        <input type="text" name="" id="search" placeholder="Search here..">
+                    </div>
+              </div>
+        </div>
+    </nav>
+
+    <section id="basket">
+        <div class="container mb-3 mt-3">
+
+            <div class="row" id="head-basket">
+                <div class="col-sm-5">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Pilih Semua Produk</label>
+                    </div>
+                <div class="col-sm-4"></div>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Harga</h5>
+                </div>
+                <div class="col-sm-4">
+                    <h5>Jumlah</h5>
+                </div>
+
+            </div>
+            <div class="row" id="body-basket">
+                <div class="col-sm-5">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input checkitem" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2"></label>
+                        <img src="../img/small-1.png" alt="">
+                        <p>Gamis Cewek</p>
+                    </div>
+                    <div class="box-image">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Rp 12.000.000</h3>
+                </div>
+                <div class="col-sm-2">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck5" disabled>
+                        <label class="custom-control-label" for="customCheck5">Merah</label>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><i class="fas fa-trash-alt"></i> Hapus</a>
+                </div>
+            </div>
+            <!-- <div class="row" id="body-basket">
+                <div class="col-sm-5">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input checkitem" id="customCheck3">
+                        <label class="custom-control-label" for="customCheck3"></label>
+                        <img src="../img/small-1.png" alt="">
+                        <p>Gamis Cewek</p>
+                      </div>
+                    <div class="box-image">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Rp 12.000.000</h3>
+                </div>
+                <div class="col-sm-2">
+                    <div class="number">
+                        <span class="next" onclick="nextNumb()"></span>
+                        <span class="prev" onclick="prevNumb()"></span>
+                        <div id="box-1"></div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <a href=""><i class="fas fa-trash-alt"></i> Hapus</a>
+                </div>
+            </div> -->
+            <div class="row" id="chekout">
+                <div class="col-sm-5" id="blank">
+                    <p>Selamat, kamu dapat potongan untuk biaya <br> pengiriman!*</p>
+                </div>
+                <div class="col-sm-6" id="total">
+                    <div class="col-sm-6">
+                        <p>Total Belanja</p>
+                        <h5>Rp 12.000.000</h5>
+                    </div>
+                    <div class="col-sm-5">
+                        <a href="">Bayar<i class="fas fa-shipping-fast"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-4 col-12">
+                    <h4>Lala Kids</h4>
+                    <a href="">Gamis Anak</a> <br>
+                    <a href="">Koko Anak</a> <br>
+                    <a href="">Kemeja Anak</a>
+                </div>
+
+                <div class="col-sm-4 col-12">
+                    <h4>Customer Service</h4>
+                    <a href=""><i class="fas fa-phone-volume"></i> 081266086688</a> <br>
+                    <a href=""><i class="fas fa-envelope"></i> Rfdhan@gmail.com</a> <br>
+                    <h4>Berlangganan Katalog</h4>
+                    <input type="text" class="form-control" id="validationTooltip01" value="" placeholder="Email" required>
+                    <button>Subscribe</button>
+                </div>
+
+                <div class="col-sm-4 col-12">
+                    <h4>Kurir Kami</h4>
+                    <img src="../img/New folder/gosend.jpg" alt="">
+                    <img src="../img/New folder/grabsend.jpg" alt="">
+                    <img src="../img/New folder/j&t.jpg" alt="">
+                    <img src="../img/New folder/JNE.jpg" alt="">
+                    <img src="../img/New folder/ninja.jpg" alt="">
+                    <h4>Pembayaran</h4>
+                    <img src="../img/New folder/visa.jpg" alt="">
+                    <img src="../img/New folder/bni.png" alt="">
+                    <img src="../img/New folder/bca.png" alt="">
+                    <img src="../img/New folder/mastercard.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script type="text/javascript" src="../JS/jquery.min.js"></script>
+    <script type="text/javascript" src="../JS/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../JS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/datatables.js"></script>
+    <script type="text/javascript" src="../js/datatables.min.js"></script>
+    <script type="text/javascript" src="../JS/bootstrap.js"></script>
+    <script src="../JS/slick.js"></script>
+    <script src="../JS/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/1cc38b39e5.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
+
+    <!-- checkbox -->
+    <script>
+        $("#customCheck1").change(function(){
+            $("input:checkbox").prop("checked", $(this). prop("checked"))
+        })
+        $(".checkitem").change(function(){
+            if($(this).prop("checked")==false){
+                $("#customCheck1").prop("checked", false)
+            }
+            if($(".checkitem:checked").length == $(".checkitem").length){
+                $("#customCheck1").prop("checked", true)
+            }
+        })
+    </script>
+    <!-- number -->
+    
+
+</body>
+</html>

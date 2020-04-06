@@ -1,0 +1,30 @@
+#warna{
+    padding: 0px 0px 40px 0px;
+}
+#warna h3{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+#warna .col-sm-7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#warna .col-sm-7 .radioGroup{
+    display: inline-flex;
+    border: 1px solid;
+    background-color: #1e90ff;
+    color: white;
+    position: relative;
+}
+#warna .col-sm-7 .radioGroup input[type="radio"]{
+    display: none;
+    -webkit-appearance: none;
+}
+#warna .col-sm-7 .radioGroup label{
+    padding: 10px;
+    display: inline-flex;
+    z-index: 2;
+    position: relative;
+}

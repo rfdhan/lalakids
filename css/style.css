@@ -1,0 +1,333 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Montserrat|Roboto&display=swap');
+</style> 
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
+body{
+    overflow: hidden;
+    background: #c8d6e5;
+}
+
+#head-nav{
+    background: #1e90ff;
+    display: flex;
+    justify-content: end;
+    height: 32px;
+    align-items: center;
+}
+#head-nav a{
+    margin-right: 50px;
+    padding: 5px 0px 5px 0px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    -webkit-box-pack: justify;
+}
+#head-nav i{
+    margin: 0px 2px 0px 0px;
+}
+/* navbar */
+nav{
+    font-family: 'Montserrat', sans-serif;
+    background: #f1f2f6;
+    -webkit-transition: all 0.4s ease;
+    position: -webkit-sticky;
+}
+nav ul{
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a{
+    padding: 0px 10px 0px 10px;
+    display: block;
+}
+nav ul li {
+    margin: 0px 10px 0px 10px;
+}
+nav ul li i{
+    font-size: 10px;
+}
+nav ul li #beranda{
+    text-decoration: none;
+    color: #f368e0;
+}
+nav ul li #produk{
+    text-decoration: none;
+    color: #1dd1a1;
+}
+nav ul li #kontak{
+    color: #ee5253;
+    text-decoration: none;
+}
+nav ul li #bisnis{
+    text-decoration: none;
+    color: #ff9f43;
+}
+nav ul li .menu-button{
+    text-decoration: none;
+    color: #2e86de;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+nav ul .right-menu{
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+nav ul .dropdown-menu{
+    display: none;
+    border-radius: none;
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    margin-top: -1px;
+    text-align: center;
+    padding: 10px 0px 15px 0px;
+    background: transparent;
+}
+nav ul .dropdown-menu .bg{
+    background-color: whitesmoke;
+    padding: 10px 0 0 0;
+    margin: 10px 0 0 0;
+}
+nav ul .dropdown-menu a{
+    padding: 5px 10px 5px 10px;
+    color: #000;
+}
+nav ul .dropdown-menu a:hover{
+    color: rgb(163, 163, 163);
+    /* background: #1e90ff; */
+    width: 100%;
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+}
+nav ul .right-menu:hover .dropdown-menu{
+    display: block;
+    /* background: whitesmoke; */
+    color: black;
+    border: none;
+}
+nav ul li #resi{
+    text-decoration: none;
+    color: #5f27cd;
+}
+nav .search-box input{
+    height: 50px;
+    width: 0px;
+    padding: 0px 0px;
+    border-radius: 40px;
+    border: 0px;
+    padding-right: 50px;
+    transition: .5s ease-in-out;
+}
+nav .search-box input:focus{
+    width: 300px;
+    padding-left: 20px;
+}
+nav .search-box::before{
+    content: "\f002";
+    font-family: "FontAwesome";
+    position: absolute;
+    right: 135px;
+    line-height: 50px;
+    color: #006990;
+}
+@media (max-width: 768px){
+    .search-box{
+        display: none;
+    }
+}
+
+
+/* banner */
+#banner{
+    padding: 20px 0px 0px 0px;
+    background: none;
+}
+#header{
+    /* max-height: 500px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#header .image-header{
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+@media (max-width: 768px){
+    #banner{
+        display: none;
+    }
+}
+
+
+
+#top-brand .container .row .col-sm-6 h3{
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 10px 0px 20px 0px;
+    overflow: hidden;
+    color: #000;
+}
+#jualan{
+    /* flex-wrap: wrap; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#product{
+    margin: 10px 5px 5px 5px;
+    width: 200px; 
+    height: 380px; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 24px -4px rgba(0,0,0,.12);
+}
+#product .card-image{
+    width: 222px; 
+    height: 250px; 
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    background: white;
+}
+#product .card-image img{
+    transition: .5s ease-in-out;
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+#product .card-image img:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+#product .card-body{
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 0px 0px 10px;
+}
+#product .card-body h5{
+    color: #000;
+    font-size: 18px;
+    font-weight: 550;
+    padding-top: 10px;
+}
+#product .card-body a{
+    text-decoration: none;
+    color: #2e86de;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+#product .card-body p{
+    margin: 2px;
+    font-size: 12px;
+    color: #c0c0c0;
+}
+
+
+
+footer{
+    margin: 20px 0px 0px 0px;
+    background: #f1f2f6;
+}
+footer .col-sm-4{
+    flex-wrap: wrap;
+    margin: 20px 0px 20px 0px;
+}
+footer .col-sm-4 h4{
+    font-weight: 550;
+    margin: 10px 0px 10px 0px;
+    padding: 5px 0px 5px 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: #2f3542;
+}
+footer .col-sm-4 a{
+    color: #747d8c;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+
+}
+footer .col-sm-4 a i{
+    color: #2f3542;
+    padding: 0px 5px 0px 0px;
+}
+footer .col-sm-4 img{
+    height: 30px;
+    margin: 0px 20px 0px 0px;
+}
+footer .col-sm-4 input{
+    font-family: 'Roboto', sans-serif;
+    max-width: 270px;
+    outline: none;
+    border: none;
+    margin: 0px 0px 10px 0px;
+    background: white;
+}
+footer .col-sm-4 button{
+    background: #2e86de;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    outline: none;
+    border: none;
+    height: 40px;
+    padding: 0px 20px ;
+    border-radius: 5px;
+}
+footer .col-sm-4 button:hover{
+    background: #115ba5;
+}
+
+.badges{
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50px;
+    background: #1e90ff;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 20px rgb(146, 144, 255);
+    /* transition: background 0.2s; */
+    cursor: pointer;
+    z-index: 1;
+}
+.badges:hover{
+    background: #115ba5;
+}
+.badges i{
+    font-size: 24px;
+    color: white;
+}
+@media (max-width: 768px){
+    .badges{
+        bottom: 10px;
+        right: 10px;
+        opacity: .6;
+    }
+}
