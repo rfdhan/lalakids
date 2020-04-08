@@ -17,11 +17,13 @@
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 <body>
     
-    <section id="head-nav">
-        <a href="#"><i class="fas fa-user"></i> Login</a>
-    </section>
+    <div class="container-fluid" id="head-nav">
+        <div class="col-sm-12">
+            <a href="#"><i class="fas fa-user"></i> Login</a>
+        </div>
+    </div>
 
-    <a href="basket.html" class="badges"><i class="fas fa-shopping-bag"></i></a>
+    <a href="basket.html" class="badges"><i class="fas fa-suitcase-rolling"></i></a>
 
     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
         
@@ -36,7 +38,7 @@
                           <a class="nav-link" href="index.html" id="beranda">Beranda</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#" id="produk">Produk</a>
+                          <a class="nav-link" href="brand.html" id="produk">Produk</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#" id="kontak">Kontak</a>
@@ -58,9 +60,10 @@
                           <a class="nav-link" href="#" id="resi">Cek Resi</a>
                       </li>
                   </ul>
-                  <div class="search-box">
-                    <input type="text" name="" id="search" placeholder="Search here..">
-                </div>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                  </form>
               </div>
         </div>
     </nav>
@@ -87,11 +90,11 @@
                 <div class="col-sm-6" id="nav-box">
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-                          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
-                          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Produk</a>
+                          <a class="nav-item nav-link" id="nav-deskripsi-tab" data-toggle="tab" href="#nav-deskripsi" role="tab" aria-controls="nav-deskripsi" aria-selected="false">Deskripsi</a>
+                          <a class="nav-item nav-link" id="nav-komentar-tab" data-toggle="tab" href="#nav-komentar" role="tab" aria-controls="nav-komentar" aria-selected="false">Komentar</a>
                         </div>
-                      </nav>
+                    </nav>
                       <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                             <div class="row" id="title-produk">
@@ -137,18 +140,12 @@
                                     <h3>Warna</h3>
                                 </div>
                                 <div class="col-sm-7">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                        <label class="custom-control-label" for="customCheck1">Merah</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck2" disabled>
-                                        <label class="custom-control-label" for="customCheck2">Hijau</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                        <label class="custom-control-label" for="customCheck3">Hijau</label>
-                                    </div>
+                                    <div class="warna"></div>
+                                    <div class="warna"></div>
+                                    <div class="warna"></div>
+                                    <div class="warna"></div>
+                                    <div class="warna"></div>
+                                    
                                 </div>
                             </div>
                             <div class="row" id="tombol">
@@ -160,8 +157,54 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                        <div class="tab-pane fade" id="nav-deskripsi" role="tabpanel" aria-labelledby="nav-deskripsi-tab">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi error enim fuga, fugit explicabo, ipsam asperiores perferendis inventore facilis cumque dicta quisquam laudantium. Eaque laborum dolorem vitae tempore, hic accusamus.</p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-komentar" role="tabpanel" aria-labelledby="nav-komentar-tab">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-sm-4">
+                                        <label for="inputEmail">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail">
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label for="inputName">Nama</label>
+                                        <input type="text" class="form-control" id="inputNama">
+                                    </div>
+                                    <div class="form-group col-sm-4">
+                                        <label for="inputHp">HP</label>
+                                        <input type="text" class="form-control" id="inputHp">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-sm-12">
+                                        <label for="inputPesan">Pesan</label>
+                                        <textarea class="form-control" id="inputPesan" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-row" id="btn-consul">
+                                    <button class="btn-con">Komentar</button>
+                                </div>
+                            </form>
+                            <div class="top-komen">
+                                <div class="image">
+                                    <img src="../img/komen.png" style="height: auto; width: 80px;">
+                                </div>
+                                <div class="text-komentar">
+                                    <h3>Andi Alhamda</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quidem corporis aperiam, inventore quibusdam nobis expedita asperiores aspernatur, hic sint molestias aliquam doloremque necessitatibus dolorum quae possimus quas mollitia. Esse.</p>
+                                </div>
+                            </div>
+                            <div class="top-komen">
+                                <div class="image">
+                                    <img src="../img/komen.png" style="height: auto; width: 80px;">
+                                </div>
+                                <div class="text-komentar">
+                                    <h3>Andi Alhamda</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quidem corporis aperiam, inventore quibusdam nobis expedita asperiores aspernatur, hic sint molestias aliquam doloremque necessitatibus dolorum quae possimus quas mollitia. Esse.</p>
+                                </div>
+                            </div>
+                        </div>
                       </div>
                 </div>
 
