@@ -19,7 +19,7 @@
     
     <div class="container-fluid" id="head-nav">
         <div class="col-sm-12">
-            <a href="#"><i class="fas fa-user"></i> Login</a>
+            <a href="login.html"><i class="fas fa-user"></i> Login</a>
         </div>
     </div>
 
@@ -56,9 +56,6 @@
                                   </div>
                               </div>
                       </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#" id="resi">Cek Resi</a>
-                      </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -74,11 +71,41 @@
                 <div class="col-sm-3">
                     <div class="short-by">
                         <p>Urut Berdasarkan</p>
-                        <li><input type="checkbox"><label class="form-check-label" for="exampleCheck1">Harga: Paling Rendah</label></li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Harga: Paling Rendah
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Harga: Paling Tinggi
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                            <label class="form-check-label" for="exampleRadios3">
+                                Nama Produk: A-Z
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                            <label class="form-check-label" for="exampleRadios4">
+                                Nama Produk: Z-A
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+                            <label class="form-check-label" for="exampleRadios5">
+                                Produk Tersedia
+                            </label>
+                          </div>
+                        <!-- <li><input type="checkbox"><label class="form-check-label" for="exampleCheck1">Harga: Paling Rendah</label></li>
                         <li><input type="checkbox"><label class="form-check-label" for="exampleCheck1">Harga: Paling Tinggi</label></li>
                         <li><input type="checkbox"><label class="form-check-label" for="exampleCheck1">Nama Produk: A-Z</label></li>
                         <li><input type="checkbox"><label class="form-check-label" for="exampleCheck1">Nama Produk: Z-A</label></li>
-                        <li><input type="checkbox"><label class="form-check-label" for="exampleCheck1">Produk Tersedia</label></li>
+                        <li><input type="checkbox"><label class="form-check-label" for="exampleCheck1">Produk Tersedia</label></li> -->
                     </div>
                     <div class="list-group" id="list-tab" role="tablist">
                         <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Pakaian Balita</a>

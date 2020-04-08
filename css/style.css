@@ -140,10 +140,9 @@ nav form button{
     outline: none;
     height: 38px;
     width: 38px;
-    text-align: center;
-    display: flex;
     justify-content: center;
     margin: 0;
+    -webkit-box-flex: unset;
 }
 nav form button i{
     font-size: 18px;
@@ -164,6 +163,7 @@ nav form button i{
 #header{
     /* max-height: 500px; */
     width: 1140px;
+    height: 500px;
     border-radius: 10px;
     display: flex;
     justify-content: center;

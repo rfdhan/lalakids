@@ -140,8 +140,6 @@ nav form button{
     outline: none;
     height: 38px;
     width: 38px;
-    text-align: center;
-    display: flex;
     justify-content: center;
     margin: 0;
 }
@@ -296,6 +294,9 @@ nav form button i{
     background: mediumslateblue;
 }
 
+#jualan .short-by label{
+    font-family: 'Open Sans', sans-serif;
+}
 #jualan .col-sm-3{
     margin: 20px 0px;
 }
@@ -542,4 +543,85 @@ footer .col-sm-4 button:hover{
         right: 10px;
         opacity: .6;
     }
+}
+
+/* login */
+#form-log{
+    background: linear-gradient(45deg,#69FF97,#00e4ff);
+}
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+#login .col-sm-6{
+    margin: 70px 0px;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+#login .image-profile{
+    position: absolute;
+    top: -40px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 5px solid white;
+}
+#login .image-profile img{
+    height: auto;
+    width: 100%;
+}
+#login .form-row{
+    padding: 50px 80px 80px 80px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+#login .form-row form input{
+    width: 250px;
+}
+#login .form-row label{
+    font-family: 'Roboto', sans-serif;
+
+}
+#masuk-buton{
+    text-align: center;
+}
+#masuk-buton button{
+    background: linear-gradient(45deg,#69FF97,#00e4ff);
+    border: none;
+    outline: none;
+    width: 100%;
+}
+#masuk-buton button:hover{
+    background: linear-gradient(45deg,#00e4ff,#69FF97);
+}
+#mis-password{
+    text-align: right;
+}
+#mis-password a{
+    text-decoration: none;
+    color: #1e90ff;
+}
+#icons{
+    text-align: center;
+}
+#icons i{
+    font-size: 24px;
+    margin: 10px 5px;
+}
+#icons i:nth-child(1){
+    color: #2e86de;
+}
+#icons i:nth-child(2){
+    color: #ff4040;
+}
+#icons i:nth-child(3){
+    color: rgb(0, 204, 204);
 }
