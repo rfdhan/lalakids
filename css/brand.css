@@ -231,52 +231,67 @@ nav form button i{
     cursor: pointer;
 }
 #pilihan .pilihan:nth-child(1){
-    background: hotpink;
+    background: #808080;
 }
 #pilihan .pilihan:nth-child(2){
-    background: aqua;
+    background: #0000FF;
 }
 #pilihan .pilihan:nth-child(3){
-    background: brown;
+    background: 	#000080;
 }
 #pilihan .pilihan:nth-child(4){
-    background: blueviolet;
+    background: #00FFFF;
 }
 #pilihan .pilihan:nth-child(5){
-    background: blue;
+    background: #964B00;
 }
 #pilihan .pilihan:nth-child(6){
-    background: cadetblue;
+    background: #FFD700;
 }
 #pilihan .pilihan:nth-child(7){
-    background: chocolate;
+    background: #00FF00;
 }
 #pilihan .pilihan:nth-child(8){
-    background: crimson;
+    background: #000000;
 }
 #pilihan .pilihan:nth-child(9){
-    background: darkgoldenrod;
+    background: #FFFF00;
 }
 #pilihan .pilihan:nth-child(10){
-    background: darkolivegreen;
+    background: #FF00FF;
 }
 #pilihan .pilihan:nth-child(11){
-    background: firebrick;
+    background: #FF007F;
 }
 #pilihan .pilihan:nth-child(12){
-    background: gold;
+    background: #FF0000;
 }
 #pilihan .pilihan:nth-child(13){
-    background: indigo;
+    background: #800000;
 }
 #pilihan .pilihan:nth-child(14){
-    background: khaki;
+    background: #FFC0CB;
 }
 #pilihan .pilihan:nth-child(15){
-    background: lightcoral;
+    background: #6F00FF;
 }
 #pilihan .pilihan:nth-child(16){
-    background: mediumslateblue;
+    background: #FF7F00;
+}
+#pilihan .pilihan:nth-child(17){
+    background: #C0C0C0;
+}
+#pilihan .pilihan:nth-child(18){
+    background: #FFFFFF;
+}
+#pilihan .pilihan:nth-child(19){
+    background: #BF00FF;
+}
+#pilihan .pilihan:nth-child(20){
+    background: #8F00FF;
+}
+#pilihan .pilihan:nth-child(21){
+    background: #808000;
 }
 
 #jualan .short-by label{
