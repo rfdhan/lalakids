@@ -153,7 +153,7 @@ nav form button i{
 
 /* banner */
 #banner{
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 20px 0px;
     display: flex;
     justify-content: center;
     background: #1e8fff5d url(../img/Untitled-1.png);
@@ -161,23 +161,27 @@ nav form button i{
     height: auto;
 
 }
-#header{
-    /* max-height: 500px; */
+#banner .row{
     width: 1140px;
     height: 500px;
-    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    /* background: greenyellow; */
+    border-radius: 10px;
 }
-#header .image-header{
-    display: flex;
-    flex: auto;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
+#banner .row .col-sm-6:nth-child(1){
+    text-align: center;
+    margin: 0;
+    padding: 0 10px 0 0;
 }
+#banner .row .col-sm-6:nth-child(2){
+    text-align: center;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+
 @media (max-width: 768px){
     #banner{
         display: none;
