@@ -95,7 +95,7 @@ nav ul .dropdown-menu{
     height: auto;
     z-index: 1;
     margin-top: -1px;
-    text-align: center;
+    text-align: left;
     padding: 10px 0px 15px 0px;
     background: transparent;
 }
@@ -106,8 +106,9 @@ nav ul .dropdown-menu .bg{
     border-radius: 0px 0px 5px 5px;
 }
 nav ul .dropdown-menu a{
-    padding: 5px 10px 5px 10px;
+    padding: 5px 15px 5px 15px;
     color: #000;
+    margin: 5px 0 0 0;
 }
 nav ul .dropdown-menu a:hover{
     color: #2e86de;
@@ -527,6 +528,10 @@ footer .col-sm-4 button{
 }
 footer .col-sm-4 button:hover{
     background: #115ba5;
+}
+#brandkategori .right{
+    columns: 2;
+    overflow: visible;
 }
 #template{
     padding: 10px 0 0 0;
