@@ -194,6 +194,51 @@ nav form button i{
     border-radius: 10px;
 }
 
+#tag{
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+#tag .tags{
+    font-size: 1.125rem;
+    color: black;
+    text-align: center;
+}
+#tag .tagar{
+    display: flex;
+    overflow: hidden;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
+    scrollbar-color: #ff9e4371 #fff ;
+}
+#tag .tagar:hover{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+#tag .tagar::-webkit-scrollbar{
+    height: 8px;
+    background: white;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid rgba(165, 165, 165, 0.226);
+}
+#tag .tagar::-webkit-scrollbar-thumb{
+    background: #ff9e4371;
+    /* background: #525861; */
+    border-radius: 8px 8px 0 0;
+}
+#tag .tagar span{
+    background: #ff9e4371;
+    /* background: rgba(192, 192, 192, 0.39); */
+    padding: 5px 20px;
+    margin: 0px 5px 5px 0px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 #jualan .check-box{
     margin: 20px 0px;
     list-style: none;
@@ -219,6 +264,26 @@ nav form button i{
     font-family: 'Lato', sans-serif;
     border-bottom: 1px solid;
 }
+
+#list-tab{
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-color: #525861 #0d141f;
+    margin: 10px 0;
+}
+#list-tab::-webkit-scrollbar{
+    width: 8px;
+    background: #0d141f;
+    border-radius: 0 8px 8px 0;
+}
+#list-tab::-webkit-scrollbar-thumb{
+    background: #525861;
+    border-radius: 0 8px 8px 0;
+}
+
+
+
 #pilihan{
     display: flex;
     flex-wrap: wrap;
@@ -360,6 +425,7 @@ nav form button i{
     max-height: 240px;
     opacity: 1;
     overflow-y: scroll;
+    scrollbar-color: #525861 #0d141f;
 }
 #select-box .option-container.active + .selected::after{
     transform: rotateX(180deg);
