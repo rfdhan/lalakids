@@ -39,7 +39,7 @@ body{
 /* navbar */
 nav{
     font-family: 'Montserrat', sans-serif;
-    background: #f1f2f6;
+    background: #f6f2f1;
     -webkit-transition: all 0.4s ease;
     position: -webkit-sticky;
 }
@@ -682,49 +682,17 @@ footer .col-sm-4 button:hover{
     border-radius: 0px 0px 10px 10px;    
 }
 #total{
-    display: flex;
-    justify-content: end;
+    text-align: end;
+    /* background: greenyellow; */
 }
-#total .col-sm-6{
-    text-align: right;
+#total i{
+    font-size: 24px;
 }
-#total .col-sm-6 p{
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Open Sans', sans-serif;
+#total button{
+    margin: 0px 0px 0px 10px;
+    padding: 10px 30px;
 }
-#total .col-sm-6 h5{
-    margin-top: 10;
-    padding: 0;
-    font-size: 16px;
-    color: #1e90ff;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
-}
-#total .col-sm-5{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-#total .col-sm-5 a{
-    font-size: 16px;
-    background: #1e90ff;
-    color: white;
-    padding: 10px 20px 10px 20px;
-    border-radius: 10px;
-    font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    transition: .5s ease-in-out;
-}
-#total .col-sm-5 a:hover{
-    background: #115ba5;
-}
-#total .col-sm-5 a i{
-    margin: 0px 0px 0px 5px;
-}
+
 #blank{
     display: flex;
     justify-content: start;
